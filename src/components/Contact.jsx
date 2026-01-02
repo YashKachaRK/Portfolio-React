@@ -2,6 +2,10 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
+  const submitButton = () => {
+    alert("Message Sent Successfully!");
+  };
+  
   return (
     <section
       id="contact"
@@ -78,6 +82,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
+              onClick={submitButton}
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded transition duration-300"
             >
               Send Message
